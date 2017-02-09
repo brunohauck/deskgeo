@@ -1,0 +1,590 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Sximo Builder - PHP Web Application Generator </title>
+	
+	<meta name="description" content="Description">
+	<meta name="author" content="Mangopik">
+	<meta name="copyright" content="Mangopik">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-05-26T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo-alt.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#2f4050;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#233646;color:#fff;border-top:1px solid #233646;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-sximo-ajax-crud">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+			<li><a href="#feature" title="Getting Started">Feature</a></li>
+			<li><a href="#changelog" title="Getting Started">ChangeLog</a></li>
+			<li><a href="#requirment" title="Compatibility">Requirment </a></li>	
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#setting" title="setting">Setting Up Application</a></li>
+			<li><a href="#pagecms" title="pagecms">Page CMS (Static Page)</a></li>
+			<li><a href="#modules" title="modules">Modules</a></li>
+			<li><a href="#createmodule" title="createmodule">Create New Module</a></li>
+			<li><a href="#editmodule" title="editemodule">Edit Current Module</a></li>
+			<li><a href="#installmodule" title="installmodule">Install New Module</a></li>
+			<li><a href="#backupmodule" title="backupmodule">Backup Current Module</a></li>
+			<li><a href="#mysqleditor" title="mysqleditor">MySQL Editor</a></li>
+			<li><a href="#grid" title="grid/table">Grid/Table</a></li>
+			<li><a href="#formeditor" title="formeditor">Form Editor</a></li>
+			<li><a href="#permission" title="permission">Permission</a></li>
+			<li><a href="#rebuild" title="rebuild">Rebuild</a></li>
+			<li><a href="#menusection" title="menusection">Menu Section</a></li>
+			<li><a href="#language" title="Register New Language">Languages</a></li>
+			<li><a href="#credit" title="credit">Source & Credits</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Mangopik 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Sximo Builder  <small style="font-size:12px;"> PHP Web Application Generator </small> </h1>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 05/26/2014</li>
+	<li>latest update: 09/16/2014</li>
+	<li>by: Mangopik</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:kangopik@gmail.com">kangopik@gmail.com</a></li>
+	</ul>
+	</section>
+	
+	<section id="getting_started">
+	<div class="page-header"><h3>Getting Started</h3><hr class="notop"></div>
+		<p>Introducing, The Real framework environment to Build Backend Administrator & Frontend for real Internet / Intranet web application with a tons of additional cms plugin possibility.  </p>
+		<p><b>SximoBuilder</b> is a powerful automation tool that can generate a full set of PHP quickly from MySQL. You can instantly create web sites that allow users to view, edit, search, add and delete records on the web. SximoBuilder is designed for high flexibility, numerous options enable you to generate PHP applications that best suits your needs. The generated codes are clean, straightforward and easy-to-customize. SximoBuilder can save you tons of time and is suitable for both beginners and experienced develpers alike</p>
+
+	</section>
+
+	<section id="feature">
+		<div class="page-header"><h3>Feature </h3><hr class="notop"></div>
+		<p>Our experience with building application using PHP & MySQL more than 5 years making us know about minimal common feature and routine proccess.  </p>
+		
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<h4> Sximo Builder Integrated module & Function  </h4>
+		<ol>
+			<li> Default Frontend Template </li>
+			<li> Awesome Backend Template </li>
+			<li> Login Page </li>
+			<li> Forgot Password Feature </li>
+			<li> Register Page </li>
+			<li> Users Management </li>
+			<li> Groups Management </li>
+			<li> Group Module Permission ( CRUDS Routine ) Management </li>
+			<li> Users Profile page </li>
+			<li>  Static Page CMS With Permission </li>
+			<li>  Setting Application Info </li>
+			<li>  Email Template Editor  ( Register & Forgot Password ) </li>
+			<li>  Setting Application Info </li>
+			<li> On / Of Frontend </li>
+			<li> On / Of Registration  </li>
+			<li> Menu Management ( Sidemenu & Top Menu with permission access ) </li>
+			<li> Blast Email to users or Groups </li>
+			<li> Audit Trail ( Log Activity users ) Management </li>
+			<li> And more .... </li>
+		
+		</ol>
+			</td>
+			<td>
+		<h4> Sximo Builder CRUD Generator </h4>
+		<ol>
+			<li> Create Unlimited New Module </li>
+			<li> Module Info Editor </li>
+			<li> Module MySQL Editor </li>
+			<li> Module Table Grid Editor</li>
+			<li> Module Form Editor </li>
+			<li> Module Form Layout Editor </li>
+			<li> Module Permission Access Editor </li>
+			<li> Rebuild ALl or Separate Files </li>
+		</ol>	
+			</td>
+			<td>
+		
+		<h4> Form Features </h4>
+		<ol>
+			<li> Hidden Type  </li>
+			<li> Input Type </li>
+			<li> Input With Date </li>
+			<li> Input With Date Time </li>
+			<li> Textarea </li>
+			<li> Textarea With Editor </li>
+			<li> Select with custom value </li>
+			<li> Select with lookup table  </li>
+			<li> Select Multiple ( for custom value ) </li>
+			<li> Radio   </li>
+			<li> Checkbox  </li>
+			<li> Upload Image / Files   </li>
+			<li> Upload Resize Image   </li>
+		</ol>
+		</td>
+		</tr>
+		</table>
+	</section>
+	
+	<section id="changelog">
+	<div class="page-header"><h3> Upgrade direction: </h3><hr class="notop"></div>
+		<ol>
+			<li> update "ROOT/setting.php" with additional new parameter for:
+  				<br> - native code igniter captcha
+				 <br>- multi language
+				  	 - social network login 
+			</li>
+			<li>since this framework using codeigniter version 3.0, you should replace ROOT/system with code igniter version 3.0</li>
+			<li>replace "ROOT/application" with new sximo for codeigniter v 1.3 (important: if you make change on core files, make sure you backup first)</li>
+			<li>replace "ROOT/sximo" </li>
+			<li>add "ROOT/uploads" directory </li>
+		</ol>
+	<div class="page-header"><h3> Troubleshoot </h3><hr class="notop"></div>
+		<p class="warning">troubleshoot: if you have problem with recaptcha, you can now change alternate captcha with native code igniter captcha</p>
+
+		
+	<div class="page-header"><h3> Version 3.2 Changelog ( 26 May 2016) </h3><hr class="notop"></div>
+		<ol>
+			<li> Enhanchement: new template layout </li>
+			<li> Enhanchement: Multiple master detail </li>
+			<li> Enhanchement: Subform / extend form</li>
+			<li> Enhanchement: new template layout </li>
+			<li> Enhanchement: Formater Date </li>
+			<li> Enhanchement: Formater images </li>
+			<li> Enhanchement: Formater link </li>
+			<li> Enhanchement: Checkbox/Radio </li>
+
+
+
+			
+		</ol>
+	</section>
+
+
+	<div class="page-header"><h3> Version 3.0 Changelog </h3><hr class="notop"></div>
+		<ol>
+			<li> Enhanchement: upgrade to codeigniter version 3.0</li>
+			<li> Enhanchement: add setting parameter for native codeigniter capthca ( issue #36 )</li>
+			<li> Enhanchement: add setting parameter for social network login ( issue #1 )</li>
+			<li> Enhanchement: add setting parameter for multi language ( issue #2 )</li>
+			<li> Enhanchement: add Multi Language module ( issue #2 )</li>
+			<li> Enhanchement: add Blog Module, Blog Comment Module, Blog Category Module</li>
+			<li> Enhanchement: add Installer Module</li>
+			<li> Enhanchement: add Backup Module</li>
+			<li> Fixed: removing 'echo' as prefix in $this->load->view syntax in index, view template file (issue #38 )</li>
+		</ol>
+	</section>
+
+	<section id="requirment">
+		<div class="page-header"><h3>Server & PHP Requirment </h3><hr class="notop"></div>
+		<p> To make Sximo Builder running on your , you need to make sure your server match with minimum requirment  </p>
+	<ol>		
+		<li>Apache, nginx, or another compatible web server. </li>
+		<li> PHP 5.2.x >> Higher</li>
+		<li> MySQL Database server </li>
+		<li>Module Re_write server</li>
+		<li>PHP_CURL Module Enable </li>
+		<li>Realtime Internet Connection ( Module Management ) </li>
+	</ol>	
+
+	</section>
+	
+
+	<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+	<h4> Preparing Installation  </h4>
+	<ol>
+		<li>Download ZIP package and unzip it. </li>
+		<li>In unzipped folder you will find folder directory like bellow.
+			<ul>
+				<li> <strong>source</strong> </li>
+				<li> <strong>database</strong> </li>
+				<li> <strong>documentation</strong> </li>	
+			</ul>
+		</li>
+		<li> Create app directory on your web directory server </li>
+		<li> Simply put all files inside directory <code>source</code> to your app folder.</li>
+		
+	</ol>
+	<h4>Create new database installation  </h4>
+	<p> You need to create new database , you can use phpmyadmin or any mysql databse tools such maestro , sqlyog etc  <br />
+	---  <br />
+	After new database created , now import <code>database/database.sql</code> file into your new database  </p>
+	
+	<h4>Configuration Installation </h4>
+	<p> 1. <b>Open</b> <code>application/config/config.php</code> file using your favorite php editor  </p>
+	<p> 2. <b>Setting Url And Licence</b> </p>
+	<pre class="prettyprint lang-php linenums">
+	$config['base_url']	= ''http://127.0.0.1/yourapp';</pre>
+	<p> 3. <b>Setting Database Info</b>  </p>
+	<b>Open</b> <code>application/config/database.php</code> file using your favorite php editor  </p>	
+	<pre class="prettyprint lang-php linenums">
+		$db['default']['hostname'] = 'localhost';
+		$db['default']['username'] = 'dbuser';
+		$db['default']['password'] = 'dbpassword';
+		$db['default']['database'] = 'dbname';
+		$db['default']['dbdriver'] = 'mysqli';
+	</pre>		
+	<p>4. <b>Access your application</b>  </p>
+	<ol>
+		<li> Now access your application via your favorite browser <br>
+			<code>http://127.0.0.1/myapp</code>
+		</li>
+		<li> Default Login : <br>
+			Email Address : <code> superadmin@mail.com </code> <br>
+			Password : <code> password </code>
+			
+		</li>
+		<li>Awesome your application is ready now !</li>
+		
+	</ol>	
+	</section>
+	
+	<section id="setting">
+	<div class="page-header"><h3>Setting Up Application</h3><hr class="notop"></div>
+	<p>After your successfull install your application , now you need to setting your app . <br />
+	Log to your application and go to :
+	 </p>
+	<p class="warning">
+		Go to  : Control Panel -> Setting 
+	</p>
+	<h4> General Setting </h4>
+	 <p><img src="assets/images/setting_up.png" style="width:70%"/></p>
+	<p><h4>Email Template</h4></p>
+	<p><img src="assets/images/email_template.png" style="width:70%"/></p>
+	</section>	
+	
+	<section id="pagecms">
+	<div class="page-header"><h3>Page CMS(Static Page)</h3><hr class="notop"></div>
+	<p>Page CMS allow you to create page for frontend ( Public ) or Private. This can be put for  creating , contact , about us , service , TOC etc<br />
+
+Before you begin creating pages , you have to know that SXIMO create file everytime you create pages , its mean you have full control to insert everything in content such tag php , css , exclude javscript </p>
+		<p class="warning">	Go to  : Control Panel -> Page CMS 	</p>
+		<p><img src="assets/images/page.jpg" style="width:70%"/></p>
+	<p><h4>Bootstrap Element</h4></p>
+	We'are really recomended that you learning twitter bootstrap css framework to use page editor .
+Sximo fully supported to use all bootstrap html and css syntac , all elements from bootsrap can be use to design your own page.
+
+	<h4> Breadcrumb Code HTML </h4>
+	<h5> Frontend </h5>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;wrapper-header &quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot; container&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;col-sm-6 col-xs-6&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;div class=&quot;page-title&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h3&gt; About Us &lt;small&gt; Who We Are ?&lt;/small&gt;&lt;/h3&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;col-sm-6 col-xs-6 &quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;ul class=&quot;breadcrumb pull-right&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;&lt;?php echo site_url(&#39;&#39;) ?&gt;&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;li class=&quot;active&quot;&gt;About Us &lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;/ul&gt;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&lt;/div&gt;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; 
+</pre>
+	
+	<h5> Backend </h5>
+<pre class="prettyprint lang-html linenums">
+&nbsp; &lt;div class=&quot;page-content row&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;!-- Page header --&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;page-header&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;page-title&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt; Title &lt;small&gt; Tag Line &lt;/small&gt;&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;breadcrumb&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;&lt;?php site_url(&#39;dashboard&#39;) ?&gt;&quot;&gt; Dashboard&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;Title &lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;&nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;page-content-wrapper&quot;&gt;
+    ----   Content page here  --- 
+    &lt;/div&gt;
+
+  &lt;/div&gt; &nbsp;
+&nbsp;&nbsp; 
+</pre>
+
+	
+ 
+
+	
+	</section>	
+	
+	<section id="modules">
+	<div class="page-header"><h3>Modules</h3><hr class="notop"></div>
+	<p>What's <strong>Module</strong> ? A module is a part of a app. A module contain one or several routines that we call <strong>CRUDSD ( Create Read Update Delete Search and Download )</strong>.</br>
+By default at the first time you create module , system will generate thoose routines. Except if your database table doesnt contain primary key, it only create routins View, Search and Download.there are 2 different module : CORE and Installed Module</p>
+<h4>Core Module</h4>
+This is built in modules, come with default distribution. Please Do not updates thooss module, because thoose module already have customizion, but if you know how it's work, then it's up to you. with your own risk ;)
+<h4>Custom ( Installed ) Module</h4>
+This is your module list, every time you create module, it will shown up at installed tab. Let's create your first module
+
+	</section>
+		
+	<section id="createmodule">
+	<div class="page-header"><h3>Create New Module</h3><hr class="notop"></div>
+	<p>Before you create module , you have to create table for module you will build . this app doest have feature to 		create table database , so you need phpmyadmin or other mysql tools for creating table</p>
+	<p class="warning">	Go to  : Control Panel -> Code Builder 	</p>
+	<P><img src="assets/images/Selection_002.png" width="70%" ></P>
+	<P><img src="assets/images/Selection_003.png" width="70%" ></P>
+	<p class="info"> PLEASE NOTE <br />
+	Module CRUD required <strong>PRIMAY TABLE</strong> WITH <strong>AUTOINCREAMENT</strong>
+	 </p>
+    <ul>Module Name / Title : Customers
+		<li>Class Controller : customers.</li>
+		<li>Table Master : customers.</li>
+		<li>Module Note : View All Customer Data</li>
+		<li>Select SQL statement: Check Auto SQL</li>
+		<li>Click Button " Create Module "</li></ul></br>
+			If you not getting any error , its should be redirecting you to module manager page
+		<p>
+	From list installed module, click button gear dropdown and click view module. You should see you module grid with 	complete function !.</br>
+<strong>YOU'RE AWESOME!!</strong> creating module in one step less than a minutes
+	
+	
+	</section>
+	<section id="editmodule">
+	<div class="page-header"><h3>Edit Current Module</h3><hr class="notop"></div>
+	<p class="warning">	Go to  : Control Panel -> Code Builder  -> Your module ->  Click button gear -> Edit 	</p>
+	<p><img src="assets/images/Selection_004.png" width="70%"/></p>
+	From list installed module , click button gear dropdown and click Edit module. Then you should able to see edit form			 and following tabs </br>
+	INFO , SQL , TABLE , FORM , MASTER DETAIL ,PERMISSION , REBUILD 
+	<p><img src="assets/images/Selection_005.png" width="70%" /></p>
+	</section>
+
+	<section id="installmodule">
+		<div class="page-header"><h3>Install New Module</h3><hr class="notop"></div>
+		<p class="warning">This feature use for new plugin you created or sximo plugin from envanto </p>
+			<p><img src="assets/images/Selection_006.png" width="70%" /></p>
+	</section>
+	<section id="backupmodule">
+		<div class="page-header"><h3>Backup Current Module</h3><hr class="notop"></div>
+		<p class="warning">Backup your precious module u've created with checkedbox the click Backup </p>
+			<p><img src="assets/images/backup.png" width="70%" /></p>
+			<p><img src="assets/images/backup1.png" width="70%" /></p>
+		<p class="warning">All module zipped are stored at uploads/zip folder</p>
+			<p><img src="assets/images/backup3.png" width="50%" /></p>
+	</section>
+
+	<section id="mysqleditor">
+	<div class="page-header"><h3>MySQL Editor</h3><hr class="notop"></div>
+	<p>At the first time you create module, system will create automatic single query table</p>
+	<p><img src="assets/images/mysql_editor.png" width="70%" /></p>
+	Why SXIMO BUILDER Creating automatic " WHERE employee.EmployeeId IS NOT NULL " ? this is for prevent error when users submit search form.</br>
+	<p>Every fields included on query select, will be displaying at grid table including fields from join table. so make sure every field you want to show on table grid and view detail, must be on your query statement</p>
+	<p class="info">	Everytime you made changes with SQL editor , you have to rebuild <strong>Model</strong> Files  	</p>
+
+	<h4>Working with join Query ( Displaying 2 or more table ) </h4>
+
+	<h5>Example Join Query</h5>
+	<pre class="prettyprint lang-sql linenumes">SELECT customer.*,tb_users.* FROM customer LEFT JOIN tb_users ON customer.staffid = tb_users.id </pre>
+	<p>If we using above statment , Grid table will automatically dispaying all SELECT statment from2 tables.</p>
+	<p class="warning"> Keep in your mind , althought we can displaying table grid form 2 or more table , form , insert , edit and remove operation only affected for 1
+table ( primary table )  </p>	
+	</section>	
+		
+	<section id="grid">
+	<div class="page-header"><h3>Grid/Table</h3><hr class="notop"></div>
+	<p> By Default , after build new module , grid will displaying all field into table </p>
+	<p><img src="assets/images/grid_table.png" width="70%" /></p>
+	<p>You can control Field to show ( table grid ) , view detail ( view detail page ) , sortable ( allow users to sort order by field ) , download ( include field to be downloadable )</P>
+	<p><img src="assets/images/table_grid_editor.png" width="70%" /></p>
+	<h4>Displaying row as image</h4>
+system does not store images on database, but the images are stored as a file at some directory. So make sure you create 	directory at uploads/your_directory_name. from image columns checkbox, checked form and put directory path uploads/your_directory_name
+	<p><img src="assets/images/display_image.png" width="400"/></p>
+	<h4>Display As ( Aliasing )</h4>
+
+If you're not familiar with mysql syntax or getting lazzy to write query, then this feature is your solution Example, you have field user_id on your table and you want to connect with tb_users and displaying username or firstname on your grid and view detail
+	<p><img src="assets/images/looked_up.png" width="70%" /></p>
+	<p><img src="assets/images/looked_up1.png" width="70%" /></p>
+	<p class="info">After You save <strong>display as</strong>, this will automatically work on grid table, but not for view detail. to take affect view detail, you need to rebuild <strong>View.blade.php</strong> </p>
+	
+	</section>	
+		
+	<section id="formeditor">
+	<div class="page-header"><h3>Form editor</h3><hr class="notop"></div>
+	<p>Form is the most important feature from CRUD activity . Form only can work on single table , this mean you only can manage operation such insert and update into one table at the same time.</br>
+At this moment , system only able to work with , Hiddem Form , Text Form , Date Form , Date Time , Select , Checkbox , Radio</p>
+	<h5> Hidden </h5>
+		<p> <strong>Hidden</strong> type is used for Primary Key with autoincreament </p>
+		<p>The important thing from the form is your table Must have field type auto increament. this will be KEY for insert or update row table.</br>
+Now for auto increament field , you must make type form HIDDEN , NO REQUIRED and SHOW.</p>
+	<h5> Text </h5>
+		<p> <strong>Text</strong> type is used for collecting text or number from users  </p>
+	<h5> Date </h5>
+		<p> <strong>Date</strong> type is used for collecting date input , the input  will have popup datepicker to make sure user input right type of date . Your field table must be set as date field <strong>( Y-m-d )</strong>  </p>
+	<h5> Date Time </h5>
+		<p> <strong>Datetime</strong> type is used for collecting date+time input , the input  will have popup datepickertime to make sure user input right type of date . Your field table must be set as date field <strong>( Y-m-d H:i:s )</strong>  </p>
+	<h5> Textarea </h5>
+		<p> <strong>Text</strong> type is used for collecting long text or number from users  </p>
+	<h5> Textarea with Editor </h5>
+		<p> <strong>Text</strong> type is used for collecting long text or number from users with editor  </p>
+	<h5> Select  </h5>
+		<strong>Select Lookup</strong>
+		<p> </p> 
+		<strong>Select Custom Value </strong>
+		<p> </p> 
+		<strong>Select Multiple Custom Value </strong>	
+		<p> </p> 
+		<strong>Select Lookup Cascade ( parent filter )  </strong>	
+	<h5> Radio </h5>
+	
+	<h5> Checkbox </h5>
+	
+	<h5> Upload ( File / Images ) </h5>
+	<p> <strong>Upload</strong> type is used for collecting image or file from users . All files and images stored at spesific folder <br />
+	So make sure you create directory at <code> uploads/your_directory_name </code>
+	 </p>
+
+	</section>		
+	
+
+	<section id="permission">
+	<div class="page-header"><h3>Permission</h3><hr class="notop"></div>
+	<p>Every CRUD module will have a couples function such view grid , add , edit etc . you can control wich group are able to access thoose function </p>
+	<p><img src="assets/images/permission_mod.png" width="70%"/></p>
+	<strong>Limit users only view they own record</strong></p>
+	This feature required  <code>entry_by (int 6)</code>  field table, if you alredy having this field on your table , then just uncheck global column , if not , then you have to add new field on primary table 
+	</section>	
+	
+	<section id="rebuild">
+	<div class="page-header"><h3>Rebuild</h3><hr class="notop"></div>
+	<p>By default at the first time you create module, system will generate files such controller , model , index, form and view . Ofcourse when application in development mode , there're possibility you made some changes from table , form grid etc. We try to cover this possibility by adding rebuild modules features</p>
+	<p><img src="assets/images/rebuild.png" width="70%"/></p>
+	<p><strong>Database table syncronize</strong></p>
+	Next, when you have current module with table A then you alter table,( insert or delete fields from current database ), this will make module error 
+	<p class="warning">	Go to  : Control Panel -> Code Builder  -> Your module ->  Click button gear -> SQL 	</p>
+	<p><img src="assets/images/resave_sql.png" width="70%"/></p>
+	<p> RE-Save your SQL stament , the system will collect new information from your table fields . Once you done , then you have to rebuild files <strong>Model , View and Form </strong></p>
+	<p><strong>Rebuild Form</strong></p>
+	<p class="warning"> After you made changes for setting/design you have to rebuild <strong>form</strong> files  </p>
+	<p><img src="assets/images/rebuild1.png" width="70%"/></p>
+	<p><strong>Rebuild View Detail</strong> </p>
+	<p class="warning"> After you made changes at table settting for view detail you have to rebuild <strong>view</strong> files   </p>
+	<p><img src="assets/images/rebuild_view.png" width="70%"/></p>
+	 <p><strong>Rebuild Grid Table and controller</strong></p>
+	 <p class="warning"> Little posibility to rebuild controller and index table, since we design controller and index table works automatic reading realtime module configuration . so when you need to rebuild both controller and index table ? Usualy when you updrade version   </p>
+	 <p><img src="assets/images/upgrade_version.png" width="70%"/></p>
+
+	</section>		
+	
+	<section id="menusection">
+	<div class="page-header"><h3>Menu Section</h3><hr class="notop"></div>
+	Everytime you create modules or pages , it will not automatic show on your app , you need to create menu and linked it to modules. There are 2 type of menu , <code>sidebar and topbar</code> . <br />
+Use Topbar menu link for public pages and sidebar for registered users and for manage your own modules 
+	<p><img src="assets/images/menu_management.png" width="70%"/></p>
+	
+	</section>	
+
+	<section id="language">
+	<div class="page-header"><h3>Languages</h3><hr class="notop"></div>
+	<h3>Register your own language ? .</h3>
+	<p> Follow following step bellow</p>
+
+	<p class="warning">	Go to  : Control Panel -> setting : then click menu translation  </p>
+	<p><img src="assets/images/button_translation.png" width="70%"/></p>
+	<p class="warning">Add new translation just click the blue button on left side</p>
+	<p><img src="assets/images/translation.png" width="70%"/></p>
+	<p class="warning"> pop modal will show  and you can add language u desire</p>
+	<p><img src="assets/images/translation2.png" width="70%"/></p>
+	<p><img src="assets/images/translation3.png" width="70%"/></p>
+
+	<p  class="warning">Edit file <b>info.json</b> and change information according to your new language
+	Start to translate every words/pharse at file <b>core_lang.php</b> and all file inside your folder language you created</p>
+	<p><img src="assets/images/translationedit.png" width="70%"/></p>
+	<p><img src="assets/images/translation4.png" width="70%"/></p>
+	<p class="warning">Done Wohooo!!</p> 
+
+	
+	
+	</section>	
+
+
+	<section id="credit">
+	<div class="page-header"><h3>Source and credit </h3><hr class="notop"></div>
+		<p>Codeigniter - Sximo Builder is using following plugins</p>
+
+		<ul>
+			<li> <a href="http://jquery.com" target="_blank"> Jquery - javascript framework library </a></li>
+			<li> <a href="http://Codeigniter.com" target="_blank"> Codeigniter - PHP framework library </a></li>
+			<li> <a href="http://getbootstrap.com" target="_blank"> Bootstrap - CSS framework library</a> </li>
+		</ul>	
+		
+
+
+	</section>
+
+</div>
+	
+</body>
+</html>
